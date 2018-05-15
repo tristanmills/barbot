@@ -15,7 +15,7 @@ pip3 install Flask
 # sudo apt-get -y install libapache2-mod-wsgi
 # sudo pip install Flask
 
-git clone https://github.com/tristanmills/barbot.git /var/www/
+git clone https://github.com/tristanmills/barbot.git /var/www/barbot/
 
 ln -s /var/www/barbot/barbot.conf /etc/apache2/sites-available/barbot.conf
 a2ensite barbot.conf
