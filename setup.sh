@@ -26,4 +26,6 @@ systemctl reload apache2
 hostnamectl set-hostname barbot
 sed -i "s/raspberrypi/barbot/" /etc/hosts
 
+reboot
+
 exit 0
