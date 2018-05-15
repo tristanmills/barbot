@@ -19,7 +19,7 @@ git clone https://github.com/tristanmills/barbot.git /var/www/
 
 ln -s /var/www/barbot/barbot.conf /etc/apache2/sites-available/barbot.conf
 a2ensite barbot.conf
-a2dissite default
+a2dissite 000-default
 rm -rf /var/www/html/
 systemctl reload apache2
 
