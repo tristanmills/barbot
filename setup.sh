@@ -24,5 +24,6 @@ rm -rf /var/www/html/
 systemctl reload apache2
 
 hostnamectl set-hostname barbot
+sed -i "s/raspberrypi/barbot/" /etc/hosts
 
 exit 0
