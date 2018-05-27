@@ -23,8 +23,8 @@ a2dissite 000-default
 rm -rf /var/www/html/
 
 # Force ipv4
-sed -i "s/Listen 80/Listen 0:0:0:0:80/" /etc/apache2/ports.conf
-sed -i "s/Listen 443/Listen 0:0:0:0:443/" /etc/apache2/ports.conf
+sed -i "s/Listen 80/Listen 0.0.0.0:80/" /etc/apache2/ports.conf
+sed -i "s/Listen 443/Listen 0.0.0.0:443/" /etc/apache2/ports.conf
 
 systemctl reload apache2
 
